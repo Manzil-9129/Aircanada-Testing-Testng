@@ -17,12 +17,13 @@ public class AirCanadaTest {
  TicketPage ticketpage=new TicketPage();
  WebDriver driver;	
  
- AircanadaData data1=new AircanadaData();
+ AircanadaData data1;
   
  
  @Test(priority=1)
   public void TicketBooking() throws InterruptedException {
-   ticketpage.from_To(AircanadaData.depart, AircanadaData.arrival);
+	 data1=new AircanadaData();
+   ticketpage.from_To(data1.column, data1.row);
    Thread.sleep(1000);
   
    }
