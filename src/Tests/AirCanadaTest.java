@@ -45,6 +45,14 @@ public class AirCanadaTest {
  
   }
   
+  @Test
+  public void main() throws InterruptedException {
+	  ticketpage.Hover();
+	  Thread.sleep(500);
+	  ticketpage.radioB();
+	  
+  }
+  
   @BeforeMethod
   public void beforeMethod() throws InterruptedException {
   ticketpage.openBrowser();
